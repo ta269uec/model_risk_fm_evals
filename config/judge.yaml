@@ -1,0 +1,4 @@
+# Pinned judge. In production point this at a strong registered model that is
+# NOT the model under test (cross-family judging preferred).
+judge_model: mock-fm
+rubric_version: "1"

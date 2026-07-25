@@ -1,0 +1,18 @@
+# TEMPLATE: copy this file to register a new external benchmark.
+# See the configuration guide, Section 5.
+id: my-benchmark-id            # unique, lowercase, stable
+kind: external
+task_family: rag               # which suite family consumes it
+loader: jsonl                  # jsonl | csv | hf
+location: sample_data/my_benchmark.jsonl   # path or HF dataset name
+split: test                    # hf loader only
+max_items: 500                 # cap for cost control; remove for full runs
+field_map:                     # map source column names to harness fields
+  question: query_column_name
+  context: passages_column_name
+  gold: answer_column_name
+label_set: []                  # classification only
+license: "[record the license]"
+version: "1"
+checksum: ""                   # sha256 of the file; harness verifies if set
+notes: "[why this benchmark was added, known caveats, owner, date]"

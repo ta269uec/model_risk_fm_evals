@@ -1,0 +1,10 @@
+adapter: google
+model_string: gemini-2.5-pro     # replace with the exact registered version
+api_key_env: GOOGLE_API_KEY
+capabilities:
+  supports_tools: true
+  supports_reasoning_modes: true
+  reasoning_levels: [low, medium, high]
+  supports_vision: true
+  max_context: 1000000
+pricing: {input_per_mtok: 0.0, output_per_mtok: 0.0}

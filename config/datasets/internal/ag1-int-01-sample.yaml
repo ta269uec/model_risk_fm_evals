@@ -1,0 +1,7 @@
+id: ag1-int-01-sample
+kind: internal
+task_family: agentic_single
+loader: jsonl
+location: sample_data/ag1_int_01_sample.jsonl
+version: "1"
+notes: "Single-agent tool-use scenarios against the banking sandbox."

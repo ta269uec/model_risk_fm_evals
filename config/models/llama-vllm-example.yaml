@@ -1,0 +1,11 @@
+# Self-hosted Llama behind vLLM's OpenAI-compatible server.
+adapter: openai_compat
+model_string: meta-llama/Llama-3.3-70B-Instruct
+base_url: http://vllm-gateway.internal:8000/v1
+api_key_env: VLLM_API_KEY
+capabilities:
+  supports_tools: true
+  supports_seed: true
+  supports_logprobs: true
+  max_context: 128000
+pricing: {input_per_mtok: 0.0, output_per_mtok: 0.0}   # internal cost allocation

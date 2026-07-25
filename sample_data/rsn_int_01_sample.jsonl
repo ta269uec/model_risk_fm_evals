@@ -1,0 +1,5 @@
+{"question": "A savings account pays 4.2 percent APY. What is the interest earned on 12500 dollars in one year? ", "gold": "525", "item_id": "rsn01:0"}
+{"question": "A customer is charged a 12 dollar monthly fee for 7 months, then it is waived. Total fees paid?", "gold": "84", "item_id": "rsn01:1"}
+{"question": "A loan payment is 431.25 per month. What is the total paid over 36 months?", "gold": "15525", "item_id": "rsn01:2"}
+{"question": "A 35 dollar overdraft fee was charged 3 times and 1 was refunded. Net fees?", "gold": "70", "item_id": "rsn01:3"}
+{"question": "Convert 125 basis points to a percentage.", "gold": "1.25", "item_id": "rsn01:4"}

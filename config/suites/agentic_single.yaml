@@ -1,0 +1,10 @@
+id: agentic_single
+family: agentic_single
+version: "1.0"
+engine: agentic
+conditions:
+  - name: tool_selection
+    dataset: ag1-int-01-sample
+    prompt_template: ""
+    decoding: [D0]
+    repeats: 4        # repeats feed pass^k

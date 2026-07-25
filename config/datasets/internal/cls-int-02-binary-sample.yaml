@@ -1,0 +1,8 @@
+id: cls-int-02-binary-sample
+kind: internal
+task_family: classification
+loader: jsonl
+location: sample_data/cls_int_02_binary_sample.jsonl
+label_set: [complaint, not_complaint]
+version: "1"
+notes: "Placeholder sample for CLS-INT-02 complaint detection."

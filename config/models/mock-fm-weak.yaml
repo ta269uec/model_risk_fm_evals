@@ -1,0 +1,5 @@
+adapter: mock
+model_string: mock-fm-weak
+accuracy_pct: 70
+capabilities: {supports_tools: true, max_context: 32000}
+pricing: {input_per_mtok: 0.2, output_per_mtok: 0.6}

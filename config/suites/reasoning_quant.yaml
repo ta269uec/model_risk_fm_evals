@@ -1,0 +1,21 @@
+id: reasoning_quant
+family: reasoning
+version: "1.0"
+engine: generic
+conditions:
+  - name: fee_computation_direct
+    dataset: rsn-int-01-sample
+    system_template: "You are a precise banking computation assistant. Give only the final number."
+    prompt_template: "{question}\n\nAnswer with only the final number."
+    parser: number
+    metrics: [numeric_accuracy, numeric_error_p90, tokens_per_correct]
+    decoding: [D0]
+    repeats: 3
+  - name: fee_computation_cot
+    dataset: rsn-int-01-sample
+    system_template: "You are a precise banking computation assistant."
+    prompt_template: "{question}\n\nWork step by step, then give the final number on the last line."
+    parser: number
+    metrics: [numeric_accuracy, numeric_error_p90, tokens_per_correct]
+    decoding: [D0]
+    repeats: 3

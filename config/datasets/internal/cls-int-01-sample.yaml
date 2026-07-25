@@ -1,0 +1,9 @@
+id: cls-int-01-sample
+kind: internal
+task_family: classification
+loader: jsonl
+location: sample_data/cls_int_01_sample.jsonl
+label_set: [card_lost, card_declined, dispute_charge, fee_inquiry, balance_inquiry,
+            payment_arrangement, fraud_report, address_change, close_account, other]
+version: "1"
+notes: "Placeholder sample for CLS-INT-01. Replace with the frozen internal split."

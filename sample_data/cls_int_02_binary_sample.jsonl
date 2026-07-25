@@ -1,0 +1,8 @@
+{"text": "I have called three times and nobody fixed my fee, this is unacceptable", "gold": "complaint", "item_id": "cls02:0"}
+{"text": "You charged me twice and refused to refund it", "gold": "complaint", "item_id": "cls02:1"}
+{"text": "The agent hung up on me, I am filing with the CFPB", "gold": "complaint", "item_id": "cls02:2"}
+{"text": "What time does the Queens branch open", "gold": "not_complaint", "item_id": "cls02:3"}
+{"text": "Please send me a new checkbook", "gold": "not_complaint", "item_id": "cls02:4"}
+{"text": "Can you confirm my payment posted", "gold": "not_complaint", "item_id": "cls02:5"}
+{"text": "The app keeps crashing and I already reported this twice with no response", "gold": "complaint", "item_id": "cls02:6"}
+{"text": "I would like to add my spouse to the account", "gold": "not_complaint", "item_id": "cls02:7"}

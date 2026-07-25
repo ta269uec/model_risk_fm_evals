@@ -1,0 +1,17 @@
+# Anthropic Claude Fable 5 via Messages API.
+adapter: anthropic
+model_string: claude-fable-5
+api_key_env: ANTHROPIC_API_KEY
+timeout_s: 600
+capabilities:
+  supports_tools: true
+  supports_structured_output: true
+  supports_seed: false
+  supports_reasoning_modes: true
+  reasoning_levels: [low, medium, high]
+  supports_vision: true
+  max_context: 200000        # confirm against current model card at intake
+  max_output: 64000          # confirm against current model card at intake
+  locked_temperature_in_reasoning: true
+thinking_budgets: {low: 2048, medium: 8192, high: 32768}
+pricing: {input_per_mtok: 0.0, output_per_mtok: 0.0}   # populate from price sheet

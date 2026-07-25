@@ -1,0 +1,7 @@
+id: rsn-int-01-sample
+kind: internal
+task_family: reasoning
+loader: jsonl
+location: sample_data/rsn_int_01_sample.jsonl
+version: "1"
+notes: "Fee and rate computation problems, numeric gold answers."

@@ -1,0 +1,13 @@
+# External benchmark registration example (Hugging Face loader).
+# Requires: pip install datasets, plus network access to the HF hub.
+id: banking77
+kind: external
+task_family: classification
+loader: hf
+location: PolyAI/banking77
+split: test
+max_items: 500
+field_map: {text: text, gold: label}   # map source columns to harness fields
+license: "CC BY 4.0 (verify before redistribution)"
+version: "hf-snapshot"
+notes: "77-way banking intent. Check contamination via perturbed variants."

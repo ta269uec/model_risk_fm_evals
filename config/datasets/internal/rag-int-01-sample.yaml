@@ -1,0 +1,7 @@
+id: rag-int-01-sample
+kind: internal
+task_family: rag
+loader: jsonl
+location: sample_data/rag_int_01_sample.jsonl
+version: "1"
+notes: "Placeholder for RAG-INT-01 policy Q&A with gold passages."

@@ -1,0 +1,32 @@
+id: classification_core
+family: classification
+version: "1.0"
+engine: generic
+conditions:
+  - name: intent_utterance_zeroshot
+    dataset: cls-int-01-sample
+    system_template: "You are an intent classifier for a bank contact center."
+    prompt_template: |
+      Classify the customer utterance into exactly one intent from this list:
+      {label_list}
+
+      Utterance: {text}
+
+      Reply with only the intent label.
+    parser: label
+    metrics: [accuracy, macro_f1, weighted_f1, invalid_label_rate, confusion_top]
+    decoding: [D0, D1]
+    repeats: 3
+  - name: binary_complaint
+    dataset: cls-int-02-binary-sample
+    system_template: "You detect whether a customer message contains a complaint per regulatory definitions."
+    prompt_template: |
+      Does the following message contain a complaint? Answer with exactly
+      'complaint' or 'not_complaint'.
+
+      Message: {text}
+    parser: label
+    metrics: [accuracy, macro_f1, invalid_label_rate]
+    decoding: [D0]
+    repeats: 3
+    critical_probe: true

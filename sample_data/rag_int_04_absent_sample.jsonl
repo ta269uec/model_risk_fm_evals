@@ -1,0 +1,2 @@
+{"question": "What is the fee for international ATM withdrawals in Japan?", "context": "[Doc 1] Domestic ATM withdrawals at network machines are free. [Doc 2] Wire cutoffs are 4pm ET.", "gold": "ABSTAIN", "answer_absent": true, "item_id": "rag04:0"}
+{"question": "What interest rate applies to the Premier Money Market above 1 million dollars?", "context": "[Doc 1] The standard savings rate is listed in the rate sheet. [Doc 2] Checking accounts earn no interest.", "gold": "ABSTAIN", "answer_absent": true, "item_id": "rag04:1"}

@@ -1,0 +1,7 @@
+id: rag-int-04-absent-sample
+kind: internal
+task_family: rag
+loader: jsonl
+location: sample_data/rag_int_04_absent_sample.jsonl
+version: "1"
+notes: "Absent-answer probes. Gold behavior is abstention."
